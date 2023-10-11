@@ -1,14 +1,14 @@
 import React from 'react';
-import Title from './Title';
 import missions from '../data/missions';
 import MissionCard from './MissionCard';
+import Title from './Title';
 
 class Missions extends React.Component {
   render() {
     return (
-      <div data-testid="missions">
+      <div data-testid="missions" className="board-card">
         <Title headline="Missões" />
-        <section>
+        <section className="missions-cards">
           {missions.map((missoes) => (
             <MissionCard
               key={ missoes.name }
