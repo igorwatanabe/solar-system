@@ -1,32 +1,159 @@
-body {
-  position: absolute;
-  width: 2236.35px;
-  height: 3354.53px;
-  left: -351.35px;
-  top: 4.16px;
-  background-image: url(../unsplash_lcT_p8kLCsc.png);
-}
+  @import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@200&display=swap');
 
-.solar-system {
-  position: absolute;
-width: 179px;
-height: 60px;
-left: 553px;
-top: 444px;
+  body {
+    background: url(../unsplash_lcT_p8kLCsc.png), lightgray 50% / cover no-repeat;
+  }
 
-font-family: 'Epilogue';
-font-style: normal;
-font-weight: 300;
-font-size: 40px;
-line-height: 150%;
-/* identical to box height, or 60px */
+  .title {
+    text-align: center;
+    color: white;
+  }
 
-text-align: center;
-text-transform: uppercase;
+  .solar-system {
+    margin-left: 50px;
+    margin-right: auto;
+  }
 
-color: #FFFFFF;
-}
+  .planet-card {
+    display: inline-block;
+    align-items: center;
+    text-align: center;
+    color: #FFF;
+    font-family: Epilogue;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+  }
 
-.title {
-  
-}
+  .Mercúrio {
+    width: 41px;
+    height: 31px;
+  }
+
+  .Vênus {
+    width: 102px;
+    height: 76px;
+    flex-shrink: 0;
+  }
+
+  .Terra {
+    width: 106px;
+    height: 79px;
+    flex-shrink: 0;
+  }
+
+  .Marte {
+    width: 66px;
+    height: 50px;
+    flex-shrink: 0;
+  }
+
+  .Júpiter {
+    width: 272px;
+    height: 204px;
+    flex-shrink: 0;
+  }
+
+  .Saturno {
+    width: 282.411px;
+    height: 210.899px;
+    transform: rotate(-16.53deg);
+    flex-shrink: 0;
+  }
+
+  .Urano {
+    width: 144px;
+    height: 109px;
+    flex-shrink: 0;
+  }
+
+  .Netuno {
+    width: 144px;
+    height: 107px;
+    flex-shrink: 0;
+  }
+
+  .board-card {
+    border-radius: 30px;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.90);
+    width: 1098px;
+    height: 2276px;
+    flex-shrink: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .subtitle {
+    color: white;
+    text-align: center;
+    font-family: Epilogue;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 150%;
+    text-transform: uppercase;
+  }
+
+  .mission-card {
+    border-radius: 17px;
+    border: 1px solid #FFF;
+    background: rgba(24, 26, 37, 0.50);
+    mix-blend-mode: hard-light;
+    width: 496px;
+    height: 192px;
+    flex-shrink: 0;
+    margin: 10px;
+  }
+
+  .missions-cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: white;
+  }
+
+  .title-mission {
+    display: flex;
+    width: 451px;
+    height: 54px;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    font-family: Epilogue;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 120%;
+    text-transform: uppercase;
+    margin-left: 20px;
+  }
+
+  .info-mission {
+    display: inline-block;
+    width: 136px;
+    height: 44px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    color: #FFF;
+    font-family: Epilogue;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    margin-left: 20px;
+    margin-top: -10px;
+
+  }
+
+  .planet-card {
+    transition: transform 0.3s;
+  }
+
+  .planet-card :hover {
+    transform: scale(1.5);
+  }
